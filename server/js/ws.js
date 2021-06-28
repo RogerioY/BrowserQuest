@@ -143,8 +143,8 @@ WS.WebsocketServer = Server.extend({
                             newHost = request.connection.address().address;
                         }
 
-                        // Default port is 80
-                        var newPort = 80;
+                        // Default port is 443
+                        var newPort = 443;
                         if (2 === headerPieces.length) {
                             // We've been given a 2nd value, maybe a port #
                             if ((typeof headerPieces[1] === 'string') && (headerPieces[1].length > 0)) {
