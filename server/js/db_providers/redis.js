@@ -12,7 +12,9 @@ module.exports = DatabaseHandler = cls.Class.extend({
             port: config.redis_port,
             host: config.redis_host,
             password: config.redis_password,
-            tls: {}
+            tls: {
+                rejectUnauthorized: false
+            }
         });
         client.auth(config.redis_password || "");
     },
