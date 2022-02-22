@@ -92,9 +92,9 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
         </a-assets>
         <a-marker preset="hiro">    
                         <!-- entity definition order is important https://aframe.io/docs/0.4.0/components/material.html#transparency-issues -->
-                        <a-entity rotation="270 0 270" position="0 0 0" geometry="primitive: plane" material="src:#background; transparent: true" canvas-updater></a-entity>
-                        <a-entity rotation="270 0 270" position="0 0.1 0" geometry="primitive: plane" material="src:#entities; transparent: true" canvas-updater></a-entity>
-                        <a-entity rotation="270 0 270" position="0 0.2 0" geometry="primitive: plane" material="src:#foreground; transparent: true" canvas-updater></a-entity>
+                        <a-entity rotation="270 0 180" position="0 0 0" geometry="primitive: plane" material="src:#background; transparent: true" canvas-updater></a-entity>
+                        <a-entity rotation="270 0 180" position="0 0.1 0" geometry="primitive: plane" material="src:#entities; transparent: true" canvas-updater></a-entity>
+                        <a-entity rotation="270 0 180" position="0 0.2 0" geometry="primitive: plane" material="src:#foreground; transparent: true" canvas-updater></a-entity>
             <!-- little debug box -->  
             <a-entity position="0 0 0" geometry="primitive: box; width: 0.1; height: 0.1; depth: 0.1" material="shader: flat; src: #helloWorldCanvas" canvas-updater draw-canvas-rectangles="canvas: #helloWorldCanvas"></a-entity>
         </a-marker>
